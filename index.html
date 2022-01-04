@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
-  
+  <script runat="server" language="C#">
+      void Button_OnClick(Object sender, EventArgs e)
+      {
+            TestPar.Text = "Hello World";
+      }
+  </script>
   <head>
     <meta charset="UTF-8">
     <title>SHORD</title>
@@ -8,22 +13,11 @@
 
   <body>
     <h1>SHORD - Dev</h1>
-    <h2>Please register an account.</h2>
+    <h2>View All Accounts</h2>
     
-    <table>
-      <tr>
-        <th>Name</th><th>Cost</th>
-      </tr>
-      <tr>
-        <td>Pepperoni</td><td>$18</td>
-      </tr>
-      <tr>
-        <td>Veggie</td><td>$15</td>
-      </tr>
-      <tr>
-        <td>Hawaiian</td><td>$12</td>
-      </tr>
-    </table>
+    <p>Press the button below to display all accounts on the database</p>
+    <button id="TestButton" onclick="BUtton_OnClick" runat="server">Click Me For Secrets</button>
+    <p id="TestPar" runat="server"></p>
 
   </body>
 
